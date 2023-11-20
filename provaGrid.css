@@ -1,0 +1,142 @@
+#container{
+    display:grid;
+    grid-template-areas:
+    'header header header header header header header'
+    'menu main main main main destra destra'
+    'menu main main main main destra destra'
+    'menu footer footer footer footer footer footer';
+    
+}
+
+#headerN1{
+    background-color: antiquewhite;
+    grid-area: header;
+    height: 150px;
+    margin-bottom: 10px;
+
+    }
+
+        #titolo{
+            text-align: center;
+        }
+
+            #navbar{
+                list-style-type: none;
+                display: inline-flex;
+
+            }
+
+                #navbarPad{
+                    padding: 2px 5px 2px;
+                }
+
+#colonnaN1{
+    background-color: rgb(215, 241, 250);
+    grid-area: menu;
+    height: 98%;
+    margin-right: 7px;
+    margin-top: 10px;
+    
+}
+
+    #lista{
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+        #listaInt{
+            padding-bottom: 1px;
+        }
+
+            #listaInt2{
+                list-style-type: none;
+            }
+
+#paragrafoN1{
+    background-color: rgb(236, 24, 236);
+    grid-area: main;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+    #paragrafo1{
+        margin: 3% 4% 3% 4%;
+        float: left;
+    }
+
+        #img1{
+            float: right;
+            width: 40%;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+
+#colonnaN2{
+    background-color: rgb(218, 250, 215);
+    grid-area: destra;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+    #img2{
+        margin: 3% 4% 3% 4%;
+        width: 92%;
+    }
+        #img3{
+            margin: 3% 4% 3% 4%;
+            width: 92%;
+        }
+
+
+#footerN1{
+    background-color: rgb(252, 252, 56);
+    grid-area: footer;
+    height: 150px;
+    padding: 2% 3% 2% 3%;
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 830px){
+    
+    #container{
+
+        display:grid;
+        grid-template-areas:
+        'header header header header header header header'
+        'destra destra destra destra destra destra destra'
+        'menu main main main main main main'
+        'menu main main main main main main'
+        'menu footer footer footer footer footer footer';
+    }
+
+
+
+    #paragrafoN1{
+        margin-right: 0;
+    }
+
+    #colonnaN2{
+        margin-left: 0;
+    }
+
+    #img2{
+        margin: 10px 10px 10px 10px;
+        display: inline-block;
+        width: 40%;
+    }
+
+    #img3{
+        float: right;
+        margin: 10px;
+        
+        width: 23%;
+    }
+
+
+
+}
